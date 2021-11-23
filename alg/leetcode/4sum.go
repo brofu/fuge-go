@@ -5,6 +5,10 @@ import (
 )
 
 // 18. 4sum
+
+// Time O(n ^ (k-1)). For k=4, O(n^3). (k -2 loops) * O(n)
+// Space O(n). We need O(k)O(k) space for the recursion. kk can be the same as nn in the worst case for the generalized algorithm. Note that, for the purpose of complexity analysis, we ignore the memory required for the output. ?? ==> why?
+
 // Key Point. Regression to N-1 numbers
 func fourSum(nums []int, target int) [][]int {
 	sort.Ints(nums)
