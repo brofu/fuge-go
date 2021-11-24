@@ -121,3 +121,5 @@ func FindNumberLessM(start, end int, nums *[]int, number int, target int) (resul
 	}
 
 }
+
+// hash map implementation
